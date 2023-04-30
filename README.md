@@ -1,8 +1,7 @@
-# design_system_start
+# Design System for Android and IOS flutter
 
-A new Flutter project.
 
-## Getting Started
+## List of Components
 
 This project is a starting point for a Flutter application.
 
