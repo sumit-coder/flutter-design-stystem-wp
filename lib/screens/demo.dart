@@ -11,7 +11,33 @@ class DesignSystemDemo extends StatelessWidget {
       statusBarBrightness: Brightness.light,
     ));
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        flexibleSpace: SafeArea(
+          child: Container(
+            alignment: Alignment.center,
+            margin: const EdgeInsets.symmetric(horizontal: 22),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Icon(
+                  Icons.person_2_outlined,
+                  color: Color(0xFF3A3A3A),
+                  size: 30,
+                ),
+                Icon(
+                  Icons.search_outlined,
+                  color: Color(0xFF3A3A3A),
+                  size: 30,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -27,7 +53,7 @@ class DesignSystemDemo extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(
-                          width: 3,
+                          width: 2,
                           color: const Color(0xFFE6E6E3),
                         ),
                       ),
@@ -50,7 +76,7 @@ class DesignSystemDemo extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(
-                          width: 3,
+                          width: 2,
                           color: const Color(0xFFE6E6E3),
                         ),
                       ),
@@ -100,7 +126,7 @@ class DayCard extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          width: 3,
+          width: 2,
           color: const Color(0xFFE6E6E3),
         ),
       ),
@@ -149,7 +175,7 @@ class DayCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: Image.network(
               "https://cdn.dribbble.com/users/505559/screenshots/17475512/media/f998490f9882f7bbddcfcc204bab4bb8.png?compress=1&resize=800x600",
-              width: 154,
+              width: 144,
             ),
           )
         ],
