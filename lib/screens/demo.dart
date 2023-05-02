@@ -93,6 +93,30 @@ class DesignSystemDemo extends StatelessWidget {
                 const SizedBox(width: 12),
               ],
             ),
+            Container(
+              padding: const EdgeInsets.all(24),
+              margin: const EdgeInsets.all(14),
+              height: 144,
+              width: double.maxFinite,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                color: const Color(0xFFF7F6F4),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Enjoy 5 Deep Breaths',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    'Emotional care of processing world tragedies and injustices.',
+                    style: TextStyle(fontSize: 16, color: Color(0xFF292826)),
+                  ),
+                ],
+              ),
+            ),
             Expanded(
               child: Container(
                 // height: 500,
