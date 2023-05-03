@@ -1,5 +1,7 @@
+import 'package:design_system_start/screens/test_book_code.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/book_demo.dart';
 import 'screens/demo.dart';
 
 void main() {
@@ -26,7 +28,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const DesignSystemDemo(),
+      // home: const DesignSystemDemo(),
+      home: const BookDemoScreen(),
+      // home: const MyHomePage(),
     );
   }
 }
