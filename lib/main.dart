@@ -1,8 +1,10 @@
 import 'package:design_system_start/screens/test_book_code.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import 'screens/book_demo.dart';
 import 'screens/demo.dart';
+import 'screens/stats_maker_screen/stats_maker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +16,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Animate.restartOnHotReload = true;
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,7 +33,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const DesignSystemDemo(),
-      home: const BookDemoScreen(),
+      // home: const BookDemoScreen(),
+      home: StatsMaker(),
       // home: const MyHomePage(),
     );
   }
