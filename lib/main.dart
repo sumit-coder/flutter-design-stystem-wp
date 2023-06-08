@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:design_system_start/screens/test_book_code.dart';
+import 'package:design_system_start/web_scraper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
       // home: StatsMaker(),
       // home: const MyHomePage(),
       // home: ScreenshotApp(),
-      home: LeetCodeTest(),
+      // home: LeetCodeTest(),
+      home: WebScraper(),
     );
   }
 }
